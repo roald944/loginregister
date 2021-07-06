@@ -38,7 +38,7 @@ if (!$conndb) {
             }
         }
     } else {
-        $msg = "<p style='background:gold; color:red;'>Create your account now!</p>";
+        $msg = "<p style='background:gold; color:red;'>Welcome! Login your account.</p>";
     }
 }
 mysqli_close($conn);

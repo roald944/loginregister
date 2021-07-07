@@ -12,7 +12,7 @@ body{
     box-shadow: 0 0 4px violet;
     /* background-color: #b6b6b644; */
     background-color: purple;
-    padding: 1em; ;
+    padding: 1em;
 }
 .wrapper #msg p{
     text-align: center;
@@ -37,9 +37,11 @@ body{
     padding: 1em;
     outline: none;
     background-color: white;
-    border: .2em solid purple;
     border-radius: 20px;
     font-weight: bold; letter-spacing: 1px;
+} 
+.wrapper #inps input:focus{
+    border: .2em solid black;
 }
 
 .wrapper #btn{

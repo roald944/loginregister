@@ -1,0 +1,116 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+
+/* top */
+
+.wrapper #top ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    background-color: skyblue;
+    padding: .5em;
+    font-weight: bold;
+    border-radius: .5em;
+}
+
+.wrapper #top ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline-color: aqua;
+    border: none;
+}
+
+
+/* bottom */
+
+.wrapper #bottom {
+    /* display: grid; grid-gap: .5em; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.wrapper #bottom>div {
+    width: auto;
+    height: auto;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.wrapper #bottom #myinfo {
+    width: 100%;
+    /* box-shadow: 1px 1px 3px black; */
+}
+
+.wrapper #bottom #myposts {
+    width: 100%;
+    /* box-shadow: 1px 1px 3px black; */
+    display: grid;
+    grid-gap: 1em;
+}
+
+.wrapper #bottom #myposts #inp {
+    display: grid;
+    grid-gap: .5em;
+}
+
+.wrapper #bottom #myposts #inp textarea {
+    padding: .5em;
+    outline-color: aqua;
+    resize: none;
+    border-radius: .5em;
+}
+
+.wrapper #bottom #myposts #inp input {
+    width: 20em;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: aqua;
+    outline-color: aqua;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper #bottom #posted {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 1px 1px 3px black; */
+    display: grid;
+    grid-gap: 1em;
+}
+
+.wrapper #bottom #posted #searchpost {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.wrapper #bottom #posted #searchpost input {
+    width: 20em;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: aqua;
+    outline-color: aqua;
+    border: none;
+}
+
+.wrapper #bottom #posted #searchpost input[type='submit'] {
+    cursor: pointer;
+    width: 5em;
+}
+
+.wrapper #bottom #posted #theposts {
+    overflow-y: scroll;
+    height: 20em;
+    border: .2em solid aqua;
+    padding: 1em;
+}
+
+.wrapper #bottom #posted #theposts::-webkit-scrollbar {
+    background-color: aqua;
+}

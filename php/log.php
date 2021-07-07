@@ -42,3 +42,4 @@ if (!$conndb) {
     }
 }
 mysqli_close($conn);
+?>

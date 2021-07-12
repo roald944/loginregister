@@ -1,83 +1,108 @@
-*{
-    margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Verdana';
 }
-body{
+
+body {
     background-color: white;
 }
+
 .wrapper {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-    width: 25em; height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25em;
+    height: auto;
     /* box-shadow: 0 0 4px #0009; */
     box-shadow: 0 0 4px violet;
     /* background-color: #b6b6b644; */
     background-color: purple;
     padding: 1em;
 }
-.wrapper #msg p{
+
+.wrapper #msg p {
     text-align: center;
     padding: .5em;
     font-size: .9em;
     font-weight: bold;
     border: none;
 }
-.wrapper h1{
+
+.wrapper h1 {
     text-transform: uppercase;
     color: purple;
-    padding: .5em; background:white;
+    padding: .5em;
+    background: white;
     border: none;
 }
-.wrapper #inps{
-    padding: .5em; background:white;
+
+.wrapper #inps {
+    padding: .5em;
+    background: white;
     border: none;
     display: grid;
     grid-gap: .5em;
 }
-.wrapper #inps input{
+
+.wrapper #inps input {
     padding: 1em;
     outline: none;
     background-color: white;
     border-radius: 20px;
-    font-weight: bold; letter-spacing: 1px;
-} 
-.wrapper #inps input:focus{
-    border: .2em solid black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    border: .2em solid purple;
 }
 
-.wrapper #btn{
-    padding: .5em; background:white;
+.wrapper #btn {
+    padding: .5em;
+    background: white;
     border: none;
     padding: 1em;
 }
-.wrapper #btn input{ cursor: pointer;
-    font-weight: bold; text-transform: uppercase;
+
+.wrapper #btn input {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
     padding: .5em;
     outline: none;
-    background-color: purple; color: white;
+    background-color: purple;
+    color: white;
     border: .2em solid purple;
-    border-radius: .4em; width: 100px;
+    border-radius: .4em;
+    width: 100px;
 }
-.wrapper #btn input:hover{
-    color: purple; background-color: white;
+
+.wrapper #btn input:hover {
+    color: purple;
+    background-color: white;
     border: .2em solid purple;
 }
 
-.wrapper #regDirect{
-    padding: .5em; background:white;
+.wrapper #regDirect {
+    padding: .5em;
+    background: white;
     border: none;
     padding: 1em;
     font-weight: bold;
     text-transform: uppercase;
 }
-.wrapper #regDirect a{
+
+.wrapper #regDirect a {
     text-decoration: none;
     color: white;
-    background-color: purple; padding: .1em;
+    background-color: purple;
+    padding: .1em;
     border-radius: 1em;
     border: .2em solid purple;
     font-size: .8em;
 }
-.wrapper #regDirect a:hover{
+
+.wrapper #regDirect a:hover {
     color: purple;
     background-color: white;
 }

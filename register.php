@@ -18,8 +18,8 @@
                                 unset($msg);
                             endif ?></div>
             <div id="inps">
-                <input type="text" name="createusername" id="" placeholder="Create Username">
-                <input type="password" name="createpassword" id="" placeholder="Create Password">
+                <input style="border: .2em solid purple;" type="text" name="createusername" id="" placeholder="Create Username">
+                <input style="border: .2em solid purple;" type="password" name="createpassword" id="" placeholder="Create Password">
             </div>
             <div id="btn">
                 <input type="submit" name="btnCreate" id="" value="Register">

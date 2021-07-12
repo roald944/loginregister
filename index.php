@@ -16,11 +16,13 @@
         <div class="wrapper">
             <h1>Login</h1>
             <div id="msg">
-                <?php if (isset($msg)) : echo $msg; unset($msg); endif ?>
+                <?php if (isset($msg)) : echo $msg;
+                    unset($msg);
+                endif ?>
             </div>
             <div id="inps">
-                <input type="text" name="loginusername" id="" placeholder="Username">
-                <input type="password" name="loginpassword" id="" placeholder="Password">
+                <input style="border: .2em solid purple;" type="text" name="loginusername" id="" placeholder="Username">
+                <input style="border: .2em solid purple;" type="password" name="loginpassword" id="" placeholder="Password">
             </div>
             <div id="btn">
                 <input type="submit" name="btnLogin" id="" value="Login">

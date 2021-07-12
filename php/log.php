@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "connection.php";
 if (!$conndb) {
     echo "Not database found. " . mysqli_connect_error();
@@ -28,9 +29,14 @@ if (!$conndb) {
                     //* proceed to login
                     $sqlLogin = mysqli_query($conn, "SELECT * FROM user_login_tbl WHERE loginUsername='$loginusername' AND loginPassword='$loginpassword'");
                     if (mysqli_num_rows($sqlLogin) > 0) {
-                        $updateuserstatus .= "UPDATE  user_login_tbl SET loginStatus='Online' WHERE loginUsername='$loginusername'";
-                        mysqli_query($conn, $updateuserstatus);
-                        $msg .= $success . "You Logged in.</p>";
+                        while ($gotuser = mysqli_fetch_array($sqlLogin)) {
+                            $updateuserstatus .= "UPDATE  user_login_tbl SET loginStatus='Online' WHERE loginUsername='$loginusername'";
+                            mysqli_query($conn, $updateuserstatus);
+                            $msg .= $success . "You Logged in.</p>";
+                            // $userid = $gotuser['user_id'];
+                            // $_SESSION['user_id'] = $userid;
+                            // header("location:userpage.php");
+                        }
                     } else {
                         $msg .= $error . "Login Failed, user not found.";
                     }
